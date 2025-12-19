@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Task Scheduler</h2>
+
+    <div class="container">
+
+        <!-- LEFT SIDE: Form -->
+        <div class="left-panel">
+            <div class="form">
+                <div class="field">
+                    <label for="title">Task Title</label>
+                    <input id="title" type="text" placeholder="e.g. Finish DSA assignment">
+                </div>
+
+                <div class="field">
+                    <label for="priority">Priority</label>
+                    <input id="priority" type="number" placeholder="e.g. 1 (highest)">
+                </div>
+
+                <div class="field">
+                    <label for="deadline">Deadline</label>
+                    <input id="deadline" type="datetime-local">
+                </div>
+
+                <div class="field">
+                    <label for="time">Time Required (hours)</label>
+                    <input id="time" type="number" placeholder="e.g. 2.5">
+                </div>
+
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: Scheduled Tasks -->
+        <div class="right-panel">
+            <h3>Scheduled Tasks</h3>
+            <ul id="taskList"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
